@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 15 Pro - Apple</title>
+    <!-- CSS faylini ulash -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Yuqori menyu -->
+    <header>
+        <div class="logo"> iPhone 15 Pro</div>
+        <nav>
+            <a href="#overview">Umumiy</a>
+            <a href="#specs">Texnik xususiyatlar</a>
+            <a href="#buy" class="buy-nav">Sotib olish</a>
+        </nav>
+    </header>
+
+    <!-- Asosiy qism -->
+    <main class="hero">
+        <div class="hero-content">
+            <h1>iPhone 15 Pro</h1>
+            <p class="subtitle">Titanium. Juda kuchli. Juda yengil. Pro.</p>
+            
+            <!-- Telefon rasmi / maketi -->
+            <div class="phone-container">
+                <div class="phone-mockup" id="phoneMockup">
+                    <div class="phone-screen">
+                        <span id="screenText">Natural Titanium</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rang tanlash qismi -->
+            <div class="selector-group">
+                <span class="color-name" id="colorTitle">Natural Titanium</span>
+                <div class="color-picker">
+                    <button class="color-btn natural active" onclick="changeColor('natural', 'Natural Titanium', '#8c857b')" title="Natural Titanium"></button>
+                    <button class="color-btn blue" onclick="changeColor('blue', 'Blue Titanium', '#3b424d')" title="Blue Titanium"></button>
+                    <button class="color-btn white" onclick="changeColor('white', 'White Titanium', '#e3e4e5')" title="White Titanium"></button>
+                    <button class="color-btn black" onclick="changeColor('black', 'Black Titanium', '#2b2b2d')" title="Black Titanium"></button>
+                </div>
+            </div>
+
+            <!-- Xotira hajmini tanlash -->
+            <div class="storage-picker">
+                <button class="storage-btn active" onclick="selectStorage(this, '$999')">128GB</button>
+                <button class="storage-btn" onclick="selectStorage(this, '$1099')">256GB</button>
+                <button class="storage-btn" onclick="selectStorage(this, '$1299')">512GB</button>
+            </div>
+
+            <!-- Narx va sotib olish -->
+            <div class="price-box">
+                Narxi: <span id="priceDisplay">$999</span> dan boshlab
+            </div>
+
+            <button class="btn-buy" onclick="alert('Buyurtmangiz qabul qilindi!')">Buyurtma berish</button>
+        </div>
+    </main>
+
+    <!-- JavaScript faylini ulash -->
+    <script src="script.js"></script>
+</body>
+</html>
